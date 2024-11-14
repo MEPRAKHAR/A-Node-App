@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a1c27; /* Slightly lighter background for better contrast */
+  color: #e0e0e0;
+}
+
+/* Home Page Styles */
+.homePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.formWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.logo-container {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.logo-home {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #ddd; /* Increased contrast */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn, .leaveBtn {
+  background: #4aed88;
+  width: 100px;
+  margin-left: auto;
+}
+
+.joinBtn:hover, .leaveBtn:hover {
+  background: #38975e;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover {
+  color: #4aed88;
+  border-color: #4aed88;
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #282a36;
+  color: white;
+  text-align: center;
+  z-index: 1000; /* Ensure footer stays on top */
+}
+
+footer a {
+  color: #4aed88;
+}
+
+footer a:hover {
+  color: #4aed88;
+  border-color: #4aed88;
+}
+
+/* Editor Page Styles */
+.mainWrap {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.aside {
+  width: 200px;
+  background: #2a2c39;
+  color: #fff;
+  padding: 16px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto; /* Allow scroll if content exceeds height */
+}
+
+.asideInner {
+  flex-grow: 1;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  width: 150px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.middle {
+  flex-grow: 1;
+  border-right: 1px solid #ccc;
+  padding-bottom: 80px;
+  overflow-y: auto; /* Allow scrolling in the code editor */
+}
+
+.right {
+  width: 300px;
+  background-color: #090808;
+  color: white;
+  padding: 16px;
+  padding-bottom: 80px;
+  overflow-y: auto; /* Enable scrolling for chat */
+}
+
+.button-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000; /* Ensure buttons stay on top */
+}
+
+.copyBtn, .leaveBtn {
+  width: 45%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyBtn {
+  background: #4aed88;
+}
+
+.leaveBtn {
+  background: #ff0000;
+}
+
+.copyBtn:hover, .leaveBtn:hover {
+  opacity: 0.9;
+}
+
+/* Chat Styles */
+.chat-container {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin: 20px;
+  overflow-y: auto; /* Enable scroll if chat gets long */
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Additional Styles */
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+  background: #1a1b25; /* Adjusted to enhance contrast */
+  color: #e0e0e0;
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.language-selector select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Client List Styles */
+.clientsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.client-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .aside {
+      width: 150px;
+  }
+
+  .right {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 200px;
+      padding-bottom: 0;
+  }
+
+  .middle {
+      padding-bottom: 100px;
+  }
+
+  .button-container {
+      flex-direction: column;
+      bottom: 10px;
+  }
+
+  .copyBtn, .leaveBtn {
+      width: 90%;
+      margin-bottom: 10px;
+  }
+}
